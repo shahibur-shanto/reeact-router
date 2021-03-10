@@ -4,15 +4,7 @@ import './Home.css';
 
 
 const Home = () => {
-    const [leagues,setLeagues] = useState([])
-    const [sports,setSports] = useState([]);
-
-    // useEffect(()=>{
-    //     const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
-    //     fetch(url)
-    //     .then(res=>res.json())
-    //     .then(data=>setLeagues(data.leagues))
-    // },[])
+     const [sports,setSports] = useState([]);
     useEffect(()=>{
         const url = 'https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League';
         fetch(url)

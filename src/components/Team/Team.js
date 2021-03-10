@@ -5,7 +5,7 @@ import './Team.css'
 import { useHistory } from 'react-router';
 
 const Team = (props) => {
-    const {strTeamBadge,strGender,strSport,strTeam,idTeam} = props.sport;
+    const {strTeamBadge,strSport,strTeam,idTeam} = props.sport;
     let history = useHistory();
     const handleClicked =(teamId)=>{
         history.push(`/team/${teamId}`);        
