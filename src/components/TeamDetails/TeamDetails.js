@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import maleImage from "../../Photo/male.png";
 import femaleImage from "../../Photo/female.png";
+import maleImage from "../../Photo/male.png";
 import "./TeamDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
