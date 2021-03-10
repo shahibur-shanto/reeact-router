@@ -1,24 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import femaleImage from "../../Photo/female.png";
 import maleImage from "../../Photo/male.png";
+import femaleImage from "../../Photo/female.png";
 import "./TeamDetails.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faTwitter,
   faYoutube,
-  
-  } from "@fortawesome/free-brands-svg-icons";
-import {faFlag,faFutbol,faVenusMars,faMapMarker} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+import {
+    faFlag,
+    faFutbol,
+    faVenusMars,
+    faMapMarker
+} from '@fortawesome/free-solid-svg-icons';
 const TeamDetails = () => {
   const { teamId } = useParams();
-  const [countryDetail, setCountryDetail] = useState([]);
+  const [teamDetail, setTeamDetail] = useState([]);
   useEffect(() => {
     const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`;
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setCountryDetail(data.teams[0]));
+      .then((data) => setTeamDetail(data.teams[0]));
   }, [teamId]);
 
   const {
@@ -30,14 +34,12 @@ const TeamDetails = () => {
     strDescriptionEN,
     strDescriptionES,
     strTeamBadge,
-  } = countryDetail;
-  let image;
-      if(strGender ==='Male'){
-          image = maleImage;
-      }
-      else{
+  } = teamDetail;
+  let image = maleImage;;
+      if(strGender ==='Female'){
           image = femaleImage;
       }
+      console.log(teamDetail)
   return (
     <>
       <div className="banner">
