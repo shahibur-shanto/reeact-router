@@ -65,13 +65,13 @@ const TeamDetails = () => {
         <br />
         <p className="team-description">{strDescriptionES}</p>
         <div className="icon-center pt-3 pb-3">
-          <a href="https:www.facebook.com" target="blank">
+          <a href="https://www.facebook.com" target="blank">
             <FontAwesomeIcon icon={faFacebook} size="5x" />
           </a>
-          <a href="https:www.twitter.com" target="blank">
+          <a href="https://www.twitter.com" target="blank">
             <FontAwesomeIcon icon={faTwitter} size="5x" />
           </a>
-          <a href="https:www.youtube.com" target="blank">
+          <a href="https://www.youtube.com" target="blank">
             <FontAwesomeIcon icon={faYoutube} size="5x" />
           </a>
         </div>
