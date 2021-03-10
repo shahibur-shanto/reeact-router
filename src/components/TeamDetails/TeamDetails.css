@@ -42,16 +42,16 @@ padding-bottom: 30px;
         text-align: center;
     }
     .team-image{
-        width:300px;
+        width:100%;
         margin: 2rem auto;
     }
     .image-size{
-        width: 100%;
+        width: 90%;
         object-fit: contain;
+        margin-left:1rem;
     }
     .team-badge{
         width:30%;
         margin:0 auto;
     }
-    
-  }
+}
