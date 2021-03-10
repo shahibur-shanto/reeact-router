@@ -11,8 +11,6 @@ const Home = () => {
         .then(res=>res.json())
         .then(data=>setSports(data.teams))
     },[])
-    // console.log(sports)
-    // console.log(leagues);
     return (
         
         <div className="main-div">

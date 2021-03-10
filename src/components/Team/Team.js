@@ -10,9 +10,7 @@ const Team = (props) => {
     const handleClicked =(teamId)=>{
         history.push(`/team/${teamId}`);        
     }
-    // console.log(props)
-    
-    return (
+return (
         <div className="col-lg-3 col-sm-12 text-center mt-5 team">
             <img className="w-25 mt-5 rounded img-fluid" src={strTeamBadge} alt="Logo"/>
             <h1>{strTeam}</h1>

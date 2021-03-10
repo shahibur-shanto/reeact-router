@@ -38,7 +38,6 @@ const TeamDetails = () => {
       else{
           image = femaleImage;
       }
-    //   console.log(countryDetail)
   return (
     <>
       <div className="banner">
