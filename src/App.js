@@ -17,15 +17,15 @@ function App() {
     <Router>
     <Switch>
     <Route exact path="/">
-    <Header></Header>
+    
     <Home></Home>
     </Route>
     <Route path="/home">
-    <Header></Header>
+    
     <Home></Home>
     </Route>
     <Route path="/team/:teamId">
-    <Header></Header>
+    
     <TeamDetails/>
     </Route>
     <Route path="*">

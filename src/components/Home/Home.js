@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Team from '../Team/Team';
 import './Home.css';
 
+
 const Home = () => {
     const [leagues,setLeagues] = useState([])
     const [sports,setSports] = useState([]);
@@ -21,7 +22,12 @@ const Home = () => {
     // console.log(sports)
     // console.log(leagues);
     return (
+        
         <div className="main-div">
+        <div className="banner">
+            <h1 className="title">Super Duper Sports League</h1>
+            
+        </div>
         <div className="row w-100 justify-content-center">
         
             

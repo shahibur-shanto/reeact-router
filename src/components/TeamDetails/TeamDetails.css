@@ -1,0 +1,57 @@
+.text{
+    color:white;
+    padding-left: 20px;
+    margin-top:2rem;
+}
+.detailDiv{
+margin:2rem auto;
+padding-bottom: 30px;
+}
+.team-image{
+    margin:20px;
+    width:25%;
+}
+.image-size{
+    width:100%;
+    height: auto;
+}
+.team-description{
+    color:white;
+    text-align: justify;
+}
+.team-badge{
+    width:15%;
+    margin:0 auto;
+}
+
+.icon-center{
+    text-align: center;
+    background-color: black;
+}
+.icon-center a{
+    padding: 1rem;
+}
+@media only screen and (max-width: 800px) {
+    .team-info {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+    .team-image{
+        width:300px;
+        margin: 2rem auto;
+    }
+    .image-size{
+        width: 100%;
+        object-fit: contain;
+    }
+    .team-badge{
+        width:30%;
+        margin:0 auto;
+    }
+    
+  }

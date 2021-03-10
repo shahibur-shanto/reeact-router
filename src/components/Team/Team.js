@@ -10,7 +10,7 @@ const Team = (props) => {
     const handleClicked =(teamId)=>{
         history.push(`/team/${teamId}`);        
     }
-    console.log(props)
+    // console.log(props)
     
     return (
         <div className="col-lg-3 col-sm-12 text-center mt-5 team">
